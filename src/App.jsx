@@ -58,6 +58,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1>TIC TAC TOE</h1>
       <StatusMessage winner={winner} gamingBoard={gamingBoard}/>
       <Board squares={gamingBoard.squares} handleSquareClick={handleSquareClick} />
       <button type="button" onClick={onNewGameStart} className={`btn-reset ${winner? 'active': ''}`} >Set New Game</button>
